@@ -26,3 +26,7 @@
   text-decoration: none;
   color: inherit;
 }
+
+#login-form input:focus {
+  border-color: yellow;
+}
