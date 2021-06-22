@@ -52,3 +52,7 @@
   animation: hideSplashScreen 0.3s ease-in-out forwards;
   animation-delay: 0.3s;
 }
+
+.user-component__text a:active {
+  text-decoration: none;
+}
