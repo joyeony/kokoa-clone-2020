@@ -16,3 +16,13 @@
 .settings__setting-column:last-child {
   opacity: var(--font-gray);
 }
+
+.alt-header__column a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-screen a {
+  text-decoration: none;
+  color: inherit;
+}
