@@ -32,6 +32,11 @@
   transition: border-color 0.3s ease-in-out;
 }
 
+#login-form input:hover:not([type="submit"]) {
+  border-bottom: 1px solid var(--yellow);
+  transition: border-color 0.3s ease-in-out;
+}
+
 #login-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
@@ -54,7 +59,20 @@
   outline: none;
 }
 
-#login-form input:focus {
-  border-radius: 2px;
+#login-form input:focus:not([type="submit"]) {
+  border-radius: 3px;
   box-shadow: var(--yellow) 0px 0px 15px 0px;
+}
+
+#login-form input:focus::placeholder {
+  color: transparent;
+}
+
+#login-form input:hover[type="submit"] {
+  box-shadow: var(--yellow) 0px 0px 15px 0px;
+}
+
+#login-form input:focus[type="submit"] {
+  background-color: rgb(248, 233, 24);
+  box-shadow: rgb(248, 233, 24) 0px 0px 15px 0px;
 }
